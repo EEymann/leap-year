@@ -1,10 +1,10 @@
 //business logic
 
 var leapYear = function(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0)) {
-    return true;
+  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+    return true; //any year divisible by 4 or 400, and not divisible by 100 will return true.
   } else {
-    return false;
+    return false; //otherwise, it will return false.
   }
 };
 
