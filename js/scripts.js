@@ -1,7 +1,11 @@
 //business logic
 
 var leapYear = function(year) {
-  return false;
+  if (year % 4 === 0) { 
+    return true; // any year divisible by 4 should return true. Otherwise, it will return false.
+  } else {
+    return false;
+  }
 };
 
 
